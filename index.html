@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neon To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="todo-container">
+  <h2>💡 Neon To-Do List</h2>
+  <div class="progress-visual">
+    <div class="circle">
+      <svg width="60" height="60">
+        <circle cx="30" cy="30" r="25" stroke="#00ffea33" stroke-width="5" fill="none" />
+        <circle cx="30" cy="30" r="25" stroke="#00ffea" stroke-width="5" fill="none" stroke-dasharray="157" stroke-dashoffset="45" />
+      </svg>
+      <span class="percent">72%</span>
+    </div>
+    <p class="progress-label">Energy Level</p>
+  </div>
+  
+  <div class="input-group">
+    <input type="text" id="taskInput" placeholder="Type your task...">
+    <button onclick="addTask()">Add</button>
+  </div>
+  <ul id="taskList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
