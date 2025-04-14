@@ -7,20 +7,21 @@ function addTask() {
     const li = document.createElement('li');
     li.textContent = taskText;
 
-    // Toggle completed on click
     li.addEventListener('click', () => {
         li.classList.toggle('completed');
     });
 
-    // Add delete button
+    
+
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = 'X';
     deleteBtn.className = 'delete-btn';
     deleteBtn.onclick = (e) => {
-        e.stopPropagation(); // prevent triggering 'completed'
+        e.stopPropagation();
         li.remove();
     };
 
+    
     li.appendChild(deleteBtn);
     document.getElementById('taskList').appendChild(li);
     taskInput.value = '';
