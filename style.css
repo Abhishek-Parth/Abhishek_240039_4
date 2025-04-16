@@ -107,7 +107,6 @@ li.completed {
   cursor: pointer;
   padding: 6px;
   border-radius: 50%;
-  transition: all 0.2s;
   text-shadow: 0 0 6px #ff0066;
 }
 
